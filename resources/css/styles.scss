@@ -1,0 +1,104 @@
+//variables
+$color_background: Gainsboro;
+$color_dark: rgb(32, 64, 86);
+$color_almost_dark: rgb(74, 74, 74);
+
+html{
+  font-size: 16px; //this does work!
+  // QUESTION: nothing!! color and background-color font family does not work here :(
+}
+
+main{
+  background-color: $color_background;
+  color: $color_dark;
+  padding: 1rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+p{
+  color: $color_almost_dark;
+}
+
+#game{
+  margin: auto;
+}
+
+.card{
+  // width: 10vw;
+  // height: 10vw;
+  //  margin: 0.5vw auto;
+  width: 23%;
+  height: 11rem;
+  background-color: $color_dark;
+  margin: 1%;
+  border-radius: .8rem;
+  //for number:
+  font-weight: 900;
+  font-size: 7rem;
+  color: white;
+  text-align: center;
+  // padding-top: .2rem;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card{
+    height: 9rem;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .card{
+    height: 9rem;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  button.startGame{
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .card{
+    height: 7rem;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .instructions{
+    margin-left: .5rem;
+  }
+}
+
+
+//adjust bootstrap modal
+.modal{
+   top: 300px;
+
+  .modal-body p{
+    text-align: center;
+    padding: 20px 20px 0 20px;
+  }
+
+  .modal-footer{
+    button{
+      margin: auto;
+    }
+  }
+}
